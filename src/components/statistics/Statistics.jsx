@@ -25,10 +25,8 @@ export const Statistics = ({ good, neutral, bad }) => {
   );
 };
 
-// Statistics.propTypes = {
-//   stats: PropTypes.shape({
-//     good: PropTypes.number.isRequired,
-//     neutral: PropTypes.number.isRequired,
-//     bad: PropTypes.number.isRequired,
-//   }).isRequired,
-// };
+Statistics.propTypes = {
+  good: PropTypes.number.isRequired,
+  neutral: PropTypes.number.isRequired,
+  bad: PropTypes.number.isRequired,
+};

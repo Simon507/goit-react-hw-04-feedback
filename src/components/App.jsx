@@ -11,8 +11,6 @@ export const App = () => {
   const [good, setGood] = useState(0);
   const [neutral, setNeutral] = useState(0);
   const [bad, setBad] = useState(0);
-  const [total, setTotal] = useState(0);
-  const [positivePercentage, setPositivePercentage] = useState(0);
 
   const onReset = () => {
     setGood(0);
