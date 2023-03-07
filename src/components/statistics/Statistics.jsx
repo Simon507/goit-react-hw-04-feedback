@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { Notification } from '../notification/Notification';
 import { StatisticsBlock } from './Statistics.styles';
 
-export const Statistics = ({ stats: { good, neutral, bad } }) => {
+export const Statistics = ({ good, neutral, bad }) => {
   return (
     <>
       {good === 0 && neutral === 0 && bad === 0 ? (
@@ -25,10 +25,10 @@ export const Statistics = ({ stats: { good, neutral, bad } }) => {
   );
 };
 
-Statistics.propTypes = {
-  stats: PropTypes.shape({
-    good: PropTypes.number.isRequired,
-    neutral: PropTypes.number.isRequired,
-    bad: PropTypes.number.isRequired,
-  }).isRequired,
-};
+// Statistics.propTypes = {
+//   stats: PropTypes.shape({
+//     good: PropTypes.number.isRequired,
+//     neutral: PropTypes.number.isRequired,
+//     bad: PropTypes.number.isRequired,
+//   }).isRequired,
+// };
